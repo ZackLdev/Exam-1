@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AquaLand", "AquaLand\AquaLand.vcxproj", "{7447A8B1-2113-4FBF-BF06-563AA55D3DFF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Testing", "Testing\Testing.vcxproj", "{F551D502-F3E3-4075-9CB7-4F9A05736C5F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7447A8B1-2113-4FBF-BF06-563AA55D3DFF} = {7447A8B1-2113-4FBF-BF06-563AA55D3DFF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7447A8B1-2113-4FBF-BF06-563AA55D3DFF}.Debug|x86.ActiveCfg = Debug|Win32
+		{7447A8B1-2113-4FBF-BF06-563AA55D3DFF}.Debug|x86.Build.0 = Debug|Win32
+		{7447A8B1-2113-4FBF-BF06-563AA55D3DFF}.Release|x86.ActiveCfg = Release|Win32
+		{7447A8B1-2113-4FBF-BF06-563AA55D3DFF}.Release|x86.Build.0 = Release|Win32
+		{F551D502-F3E3-4075-9CB7-4F9A05736C5F}.Debug|x86.ActiveCfg = Debug|Win32
+		{F551D502-F3E3-4075-9CB7-4F9A05736C5F}.Debug|x86.Build.0 = Debug|Win32
+		{F551D502-F3E3-4075-9CB7-4F9A05736C5F}.Release|x86.ActiveCfg = Release|Win32
+		{F551D502-F3E3-4075-9CB7-4F9A05736C5F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B19ADCEA-1A36-44F0-B8E9-2D5167654622}
+	EndGlobalSection
+EndGlobal
