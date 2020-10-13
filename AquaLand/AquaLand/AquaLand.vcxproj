@@ -186,6 +186,7 @@
     <ClInclude Include="AquaLand.h" />
     <ClInclude Include="Aquarium.h" />
     <ClInclude Include="ChildView.h" />
+    <ClInclude Include="InvasivePlant.h" />
     <ClInclude Include="ItemVisitor.h" />
     <ClInclude Include="Plant.h" />
     <ClInclude Include="PredatorPreyBalance.h" />
@@ -205,6 +206,7 @@
     <ClCompile Include="AquaLand.cpp" />
     <ClCompile Include="Aquarium.cpp" />
     <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="InvasivePlant.cpp" />
     <ClCompile Include="Plant.cpp" />
     <ClCompile Include="PredatorPreyBalance.cpp" />
     <ClCompile Include="FishAngler.cpp" />
