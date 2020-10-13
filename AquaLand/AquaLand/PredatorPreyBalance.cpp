@@ -11,28 +11,37 @@
 */
 void CPredatorPreyBalance::VisitFishAngler(CFishAngler* item)
 {
+	mPredator += 1;
 }
 
 
 void CPredatorPreyBalance::VisitFishBeta(CFishBeta* item)
 {
+	mPrey += 1;
 }
 
 
 
 void CPredatorPreyBalance::VisitFishMolly(CFishMolly* item)
 {
+	mPrey += 1;
 }
 
 
 
 void CPredatorPreyBalance::VisitFishNemo(CFishNemo* item)
 {
+	mPrey += 1;
 }
 
 
 
 bool CPredatorPreyBalance::TooManyPredators()
 {
-	return false;
+	if ((mPredator*2) > mPrey) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }

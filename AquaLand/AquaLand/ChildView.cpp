@@ -220,17 +220,20 @@ void CChildView::OnViewCheckbalance()
 
 	// This assignment is just to make sure the project builds
 	// Replace it with your implementation.
-	bool tooMany = false;
+	CPredatorPreyBalance balance;
+	mAquarium.Accept(&balance);
+
+	bool tooMany = balance.TooManyPredators();
 
 	std::wstringstream msg;
-	if (tooMany)
+	if (tooMany == true)
 	{
 		msg << L"There are too many predators!";
+		AfxMessageBox(msg.str().c_str());
 	}
-	else 
+	else
 	{
 		msg << L"The tank is in balance.";
+		AfxMessageBox(msg.str().c_str());
 	}
-	AfxMessageBox(msg.str().c_str());
-
 }

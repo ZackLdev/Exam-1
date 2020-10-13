@@ -15,14 +15,19 @@ class CPredatorPreyBalance
 public:
 	virtual ~CPredatorPreyBalance() {};
 
-	virtual void VisitFishAngler(CFishAngler* item) override;
+	void VisitFishAngler(CFishAngler* item) override;
 
-	virtual void VisitFishBeta(CFishBeta* fish) override;
+	void VisitFishBeta(CFishBeta* fish) override;
 
-	virtual void VisitFishMolly(CFishMolly* fish) override;
+	void VisitFishMolly(CFishMolly* fish) override;
 
-	virtual void VisitFishNemo(CFishNemo* fish) override;
+	void VisitFishNemo(CFishNemo* fish) override;
 
 	bool TooManyPredators();
+
+private:
+
+	int mPrey=0;
+	int mPredator=0;
 };
 
